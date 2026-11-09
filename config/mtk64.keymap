@@ -134,7 +134,7 @@
         layer_4 {
             display-name = "L4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(DQT)  &kp HOME  &kp UP  &kp LS(STAR)  &kp LBKT  &kp RBKT  &kp LS(PLUS)  &kp UP  &kp HOME  &kp LS(COLON)  &kp SEMI  &trans  &kp SQT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(LPAR)  &kp N9  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI  &trans  &trans  &trans  &kp END  &kp EQUAL  &kp FSLH  &kp LS(EXCL)  &kp N1  &trans  &kp QUESTION  &kp MINUS  &kp EQUAL  &kp END  &kp SHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(DQT)  &kp HOME  &kp UP  &kp LS(STAR)  &kp LBKT  &kp RBKT  &kp LS(PLUS)  &kp UP  &kp HOME  &kp LS(COLON)  &kp SEMI  &trans  &kp SQT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(LPAR)  &kp N9  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI  &trans  &trans  &trans  &kp END  &kp EQUAL  &kp FSLH  &kp LS(EXCL)  &kp N1  &trans  &kp QUESTION  &kp MINUS  &kp EQUAL  &kp END  &kp A  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 

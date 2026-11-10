@@ -83,15 +83,17 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
+
         // ==========================================
         // 左エンコーダー
         // ==========================================
-
         // 左回転
+
         enc_left: enc_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_left_no_shift>, <&enc_left_shift>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -99,6 +101,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_left_shift_only>, <&enc_left_ctrl_shift>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -106,6 +109,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F13>, <&kp F23>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -113,6 +117,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F19>, <&kp LC(F13)>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -120,6 +125,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_left_no_ctrl>, <&enc_left_ctrl>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -127,6 +133,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&kp F17>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -134,15 +141,17 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F15>, <&kp F21>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
-
         // 右回転
+
         enc_right: enc_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_right_no_shift>, <&enc_right_shift>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -150,6 +159,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_right_shift_only>, <&enc_right_ctrl_shift>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -157,6 +167,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F14>, <&kp F24>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -164,6 +175,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F20>, <&kp LC(F14)>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -171,6 +183,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_right_no_ctrl>, <&enc_right_ctrl>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -178,6 +191,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&kp F18>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -185,19 +199,20 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F16>, <&kp F22>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
-
 
         // ==========================================
         // 右エンコーダー
         // ==========================================
-
         // 左回転
+
         enc2_left: enc2_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc2_left_no_shift>, <&enc2_left_shift>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -205,6 +220,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc2_left_shift_only>, <&enc2_left_ctrl_shift>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -212,6 +228,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F13>, <&kp F23>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -219,6 +236,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F19>, <&kp LC(F13)>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -226,6 +244,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc2_left_no_ctrl>, <&enc2_left_ctrl>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -233,6 +252,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&kp F17>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -240,15 +260,17 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&kp F21>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
-
         // 右回転
+
         enc2_right: enc2_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc2_right_no_shift>, <&enc2_right_shift>;
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -256,6 +278,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc2_right_shift_only>, <&enc2_right_ctrl_shift>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -263,6 +286,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F14>, <&kp F24>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -270,6 +294,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F20>, <&kp LC(F14)>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -277,6 +302,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc2_right_no_ctrl>, <&enc2_right_ctrl>;
+
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -284,6 +310,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&kp F18>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -291,9 +318,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&kp F22>;
+
             mods = <(MOD_LALT | MOD_RALT)>;
         };
-
 
         // ==========================================
         // エンコーダー回転の割り当て
@@ -303,6 +330,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&enc_left>, <&enc_right>;
+
             tap-ms = <20>;
         };
 
@@ -310,111 +338,107 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&enc2_left>, <&enc2_right>;
+
             tap-ms = <20>;
         };
-//ここまで
-        
+
+        //ここまで
     };
 };
 
 / {
+    keymap {
+        compatible = "zmk,keymap";
 
-keymap {
-    compatible = "zmk,keymap";
-
-    default_layer {
-        display-name = "DEF";
-        bindings = <
+        default_layer {
+            display-name = "DEF";
+            bindings = <
 &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp SQT  &kp TAB  &kp W  &kp G  &kp H  &kp D  &kp MINUS  &kp COMMA  &kp Y  &kp U  &kp P  &kp Q  &kp BSPC  &hold_tap_mkp_kp RCLK LANGUAGE_2  &hold_tap_kp_kp LCTRL R  &hold_tap_kp_kp LALT S  &hold_tap_kp_kp SPACE N  &hold_tap_kp_kp LEFT_SHIFT T  &kp K  &kp DOT  &kp A  &kp E  &hold_tap_kp_kp RALT O  &hold_tap_kp_kp RCTRL I  &kp LANGUAGE_1  &kp LSHFT  &hold_tap_kp_kp LEFT_SHIFT B  &kp J  &kp F  &kp L  &kp M  &hold_tap_kp_kp LEFT_SHIFT BACKSPACE  &kp JP_RBKT  &hold_tap_mo_kp 9 SEMICOLON  &kp V  &kp C  &kp X  &hold_tap_kp_kp RSHFT Z  &kp BSLH  &kp A  &kp LGUI  &hold_tap_mo_kp 8 SPACE  &hold_tap_mo_kp 8 ENTER  &hold_tap_mo_kp 10 RIGHT_WIN  &hold_tap_mo_kp 8 ENTER  &kp JP_CARET  &kp JP_YEN  &trans  &kp LA(LS(LCTRL))  &lt 3 LANG1  &mo 11  &kp ENTER  &tog 2  &hold_tap_mo_kp 8 ENTER  &kp LG(V)  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
-        >;
+            >;
 
-        sensor-bindings =
-            //<&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,,,,,,,,
-            <&cursor_encoder>,
-            <&scroll_up_down SCRL_UP SCRL_DOWN>;
-    };
+            sensor-bindings = <&cursor_encoder>, <&cursor_encoder_2>;
+        };
 
-    layer_1 {
-        display-name = "SNP";
-        bindings = <
+        layer_1 {
+            display-name = "SNP";
+            bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &kp UP_ARROW  &kp PG_DN  &trans  &scrl_inv_tog  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &aml_tog  &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &cpi_inc  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &cpi_dec  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    layer_2 {
-        display-name = "MSE";
-        bindings = <
+        layer_2 {
+            display-name = "MSE";
+            bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &kp UP_ARROW  &kp PG_DN  &trans  &trans  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
+            >;
 
-        sensor-bindings = <
+            sensor-bindings = <
                 &inc_dec_kp TAB LS(TAB) 
                 &inc_dec_kp PG_UP PG_DN
-        >;
-    };
+            >;
+        };
 
-    layer_3 {
-        display-name = "SCR";
-        bindings = <
+        layer_3 {
+            display-name = "SCR";
+            bindings = <
 &kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
+            >;
 
-        sensor-bindings = <
+            sensor-bindings = <
                 &scroll_left_right SCRL_LEFT SCRL_RIGHT
                 &scroll_up_down SCRL_UP SCRL_DOWN
-        >;
-    };
+            >;
+        };
 
-    layer_4 {
-        display-name = "L4";
-        bindings = <
+        layer_4 {
+            display-name = "L4";
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(DQT)  &kp HOME  &kp UP  &kp LS(STAR)  &kp LBKT  &kp RBKT  &kp LS(PLUS)  &kp UP  &kp HOME  &kp LS(COLON)  &kp SEMI  &trans  &kp SQT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(LPAR)  &kp N9  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI  &trans  &trans  &trans  &kp END  &kp EQUAL  &kp FSLH  &kp LS(EXCL)  &kp N1  &trans  &kp QUESTION  &kp MINUS  &kp EQUAL  &kp END  &kp A  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    layer_5 {
-        display-name = "L5";
-        bindings = <
+        layer_5 {
+            display-name = "L5";
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    layer_6 {
-        display-name = "AML";
-        bindings = <
+        layer_6 {
+            display-name = "AML";
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    IPAD {
-        bindings = <
+        IPAD {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    arrow {
-        bindings = <
+        arrow {
+            bindings = <
 &kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp DOUBLE_QUOTES  &kp HOME  &kp UP  &kp ASTRK  &kp LBKT  &kp F12  &kp RBKT  &kp UP  &kp HOME  &kp COLON  &kp DELETE  &trans  &hold_tap_kp_kp LCTRL SQT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(LPAR)  &kp N9  &kp LEFT  &kp DOWN  &kp RIGHT  &hold_tap_kp_kp RCTRL SEMICOLON  &trans  &trans  &kp LEFT_SHIFT  &kp END  &kp EQUAL  &kp FSLH  &kp EXCLAMATION  &trans  &trans  &kp QUESTION  &kp MINUS  &kp EQUAL  &kp END  &kp RSHIFT  &trans  &trans  &trans  &kp DEL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    copy {
-        bindings = <
+        copy {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(E)  &trans  &trans  &kp RC(RS(TAB))  &trans  &kp RG(E)  &trans  &trans  &trans  &trans  &kp RC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp LC(TAB)  &kp LC(V)  &kp RC(C)  &kp RC(X)  &kp RC(Z)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_PREV  &kp C_PP  &kp LS(C_NEXT)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    window {
-        bindings = <
+        window {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RG(UP)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RG(LEFT)  &kp RG(DOWN)  &kp RG(RIGHT)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    Macro {
-        bindings = <
+        Macro {
+            bindings = <
 &trans  &trans  &kp LA(F24)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(F24)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp A  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
+            >;
+        };
     };
-};
-
 };

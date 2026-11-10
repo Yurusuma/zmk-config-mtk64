@@ -84,15 +84,15 @@
             tapping-term-ms = <100>;
         };
 
-        // ==========================================================================ここから追加
-        // エンコーダー：左回転
-        // =====================================
+               // ==========================================
+        // 左エンコーダー
+        // ==========================================
 
+        // 左回転
         enc_left: enc_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_left_no_shift>, <&enc_left_shift>;
-
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -100,7 +100,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_left_shift_only>, <&enc_left_ctrl_shift>;
-
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -108,7 +107,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F13>, <&kp F23>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -116,7 +114,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F19>, <&kp LC(F13)>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -124,15 +121,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_left_no_ctrl>, <&enc_left_ctrl>;
-
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         enc_left_no_ctrl: enc_left_no_ctrl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ARROW>, <&kp F17>;
-
+            bindings = <&msc SCRL_LEFT>, <&kp F17>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -140,19 +135,15 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F15>, <&kp F21>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
-        // =====================================
-        // エンコーダー：右回転
-        // =====================================
 
+        // 右回転
         enc_right: enc_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_right_no_shift>, <&enc_right_shift>;
-
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -160,7 +151,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_right_shift_only>, <&enc_right_ctrl_shift>;
-
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -168,7 +158,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F14>, <&kp F24>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -176,7 +165,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F20>, <&kp LC(F14)>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -184,15 +172,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&enc_right_no_ctrl>, <&enc_right_ctrl>;
-
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         enc_right_no_ctrl: enc_right_no_ctrl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ARROW>, <&kp F18>;
-
+            bindings = <&msc SCRL_RIGHT>, <&kp F18>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -200,22 +186,134 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F16>, <&kp F22>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
-        // =====================================
+
+        // ==========================================
+        // 右エンコーダー
+        // ==========================================
+
+        // 左回転
+        enc2_left: enc2_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&enc2_left_no_shift>, <&enc2_left_shift>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        enc2_left_shift: enc2_left_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&enc2_left_shift_only>, <&enc2_left_ctrl_shift>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        enc2_left_shift_only: enc2_left_shift_only {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F13>, <&kp F23>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+        enc2_left_ctrl_shift: enc2_left_ctrl_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F19>, <&kp LC(F13)>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+        enc2_left_no_shift: enc2_left_no_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&enc2_left_no_ctrl>, <&enc2_left_ctrl>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        enc2_left_no_ctrl: enc2_left_no_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&kp F17>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+        enc2_left_ctrl: enc2_left_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&kp F21>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+
+        // 右回転
+        enc2_right: enc2_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&enc2_right_no_shift>, <&enc2_right_shift>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        enc2_right_shift: enc2_right_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&enc2_right_shift_only>, <&enc2_right_ctrl_shift>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        enc2_right_shift_only: enc2_right_shift_only {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F14>, <&kp F24>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+        enc2_right_ctrl_shift: enc2_right_ctrl_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F20>, <&kp LC(F14)>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+        enc2_right_no_shift: enc2_right_no_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&enc2_right_no_ctrl>, <&enc2_right_ctrl>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        enc2_right_no_ctrl: enc2_right_no_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&kp F18>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+        enc2_right_ctrl: enc2_right_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&kp F22>;
+            mods = <(MOD_LALT | MOD_RALT)>;
+        };
+
+
+        // ==========================================
         // エンコーダー回転の割り当て
-        // =====================================
+        // ==========================================
 
         cursor_encoder: cursor_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&enc_left>, <&enc_right>;
-
             tap-ms = <20>;
+        };
 
-            // ===============================================================================================================ここまで
+        cursor_encoder_2: cursor_encoder_2 {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&enc2_left>, <&enc2_right>;
+            tap-ms = <20>;
+        };
+//ここまで追加
         };
     };
 };

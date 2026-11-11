@@ -167,7 +167,7 @@
         compatible = "zmk,input-processor-aml";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <500>;
-        excluded-positions = <43 44 45 46 47>; // MB4, MB5, MB1, MB2, MB3
+        excluded-positions = <31 32 33 34 35 36 43 44 45 46 47>; // MB4, MB5, MB1, MB2, MB3
     };
 
     zip_scroll_inverter: zip_scroll_inverter {

@@ -406,10 +406,10 @@
             >;
         };
 
-        layer_6 {
+        aml {
             display-name = "AML";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &mo 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -419,7 +419,7 @@
             >;
         };
 
-        arrow {
+        FN {
             bindings = <
 &kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp DOUBLE_QUOTES  &kp HOME  &kp UP  &kp ASTRK  &kp LBKT  &kp F12  &kp PLUS  &kp UP  &kp HOME  &kp COLON  &kp DELETE  &trans  &hold_tap_kp_kp LCTRL SQT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT  &kp DOWN  &kp RIGHT  &hold_tap_kp_kp RCTRL SEMICOLON  &trans  &trans  &kp LEFT_SHIFT  &kp END  &kp EQUAL  &kp FSLH  &kp EXCLAMATION  &trans  &trans  &kp QUESTION  &kp MINUS  &kp EQUAL  &kp END  &kp RSHIFT  &trans  &trans  &trans  &kp DEL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;

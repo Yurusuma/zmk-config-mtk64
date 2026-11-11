@@ -409,7 +409,7 @@
         aml {
             display-name = "AML";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans  &mkp MB4  &kp B  &kp A  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans  &trans  &kp NUMBER_6  &trans  &mo 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans  &trans  &kp NUMBER_6  &trans  &mo 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 

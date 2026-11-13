@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/matrix_transform.h>
+s#include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
 / {
@@ -139,7 +139,7 @@
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <15>;
+        steps = <60>;
         status = "disabled";
     };
 

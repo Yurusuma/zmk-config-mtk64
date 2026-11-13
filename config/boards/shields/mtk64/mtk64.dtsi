@@ -149,6 +149,7 @@ s#include <dt-bindings/zmk/matrix_transform.h>
         b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <60>;
         status = "disabled";
+
     };
 
     sensors: sensors {
